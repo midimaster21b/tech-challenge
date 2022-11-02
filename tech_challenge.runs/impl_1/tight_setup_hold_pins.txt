@@ -1,0 +1,28 @@
++====================+===================+==========================================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                                                      |
++====================+===================+==========================================================================================================================+
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[5].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D       |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[1].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D       |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_write_data_cdc/cdc_bit_gen[0].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_write_data_cdc/cdc_bit_gen[2].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[4].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D       |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[6].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D       |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[3].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D       |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_write_data_cdc/cdc_bit_gen[6].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[7].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D       |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[0].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D       |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[2].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D       |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[12].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D      |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[8].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D       |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_rst_cdc/ff_data_r_reg[9]_srl10_srlopt/D                                    |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[10].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D      |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[11].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D      |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[9].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D       |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_write_data_cdc/cdc_bit_gen[1].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_write_data_cdc/cdc_bit_gen[7].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_rw_cdc/dest_cdc_data_r_reg_srl11_srlopt/D                                  |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_write_data_cdc/cdc_bit_gen[4].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_write_data_cdc/cdc_bit_gen[5].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_write_data_cdc/cdc_bit_gen[3].u_cdc_bit/dest_cdc_data_r_reg_srl11_srlopt/D |
+| clk_pl_0           | clk_pl_0          | design_1_i/adc_adapter_top_0/U0/u_spi/u_cdc/u_trig_pulse_cdc/dest_ff_r_reg[0]/D                                          |
++--------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------+

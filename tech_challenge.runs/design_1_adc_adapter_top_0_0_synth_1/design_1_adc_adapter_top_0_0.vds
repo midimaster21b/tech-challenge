@@ -1,0 +1,700 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Nov  1 21:19:24 2022
+# Process ID: 2071924
+# Current directory: /home/midimaster21b/prj/tech_challenge/tech_challenge.runs/design_1_adc_adapter_top_0_0_synth_1
+# Command line: vivado -log design_1_adc_adapter_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_adc_adapter_top_0_0.tcl
+# Log file: /home/midimaster21b/prj/tech_challenge/tech_challenge.runs/design_1_adc_adapter_top_0_0_synth_1/design_1_adc_adapter_top_0_0.vds
+# Journal file: /home/midimaster21b/prj/tech_challenge/tech_challenge.runs/design_1_adc_adapter_top_0_0_synth_1/vivado.jou
+# Running On: Testbench-Rhino, OS: Linux, CPU Frequency: 2200.000 MHz, CPU Physical cores: 16, Host memory: 16653 MB
+#-----------------------------------------------------------
+source design_1_adc_adapter_top_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/midimaster21b/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_adc_adapter_top_0_0 -part xczu7ev-ffvc1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2075171
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2946.688 ; gain = 211.828 ; free physical = 171 ; free virtual = 7952
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_adc_adapter_top_0_0' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/synth/design_1_adc_adapter_top_0_0.vhd:97]
+	Parameter NUM_ADC_BITS bound to: 16 - type: integer 
+	Parameter AXI_REGS_ADDR_WIDTH_G bound to: 5 - type: integer 
+	Parameter AXI_REGS_DATA_WIDTH_G bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adc_adapter_top' declared at '/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:8' bound to instance 'U0' of component 'adc_adapter_top' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/synth/design_1_adc_adapter_top_0_0.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'adc_adapter_top' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:65]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_clk_125' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:150]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_data' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:161]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_data' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:161]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_data' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:161]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_data' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:161]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_data' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:161]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_data' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:161]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_data' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:161]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_data' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:161]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_clk' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:172]
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'u_IBUFDS_data_or' to cell 'IBUFDS' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:182]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 500.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE3_inst' to cell 'IDELAYE3' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:197]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 500.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE3_inst' to cell 'IDELAYE3' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:197]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 500.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE3_inst' to cell 'IDELAYE3' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:197]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 500.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE3_inst' to cell 'IDELAYE3' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:197]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 500.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE3_inst' to cell 'IDELAYE3' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:197]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 500.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE3_inst' to cell 'IDELAYE3' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:197]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 500.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE3_inst' to cell 'IDELAYE3' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:197]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 500.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE3_inst' to cell 'IDELAYE3' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:197]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'u_IDDRE1_data' to cell 'IDDRE1' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:234]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'u_IDDRE1_data' to cell 'IDDRE1' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:234]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'u_IDDRE1_data' to cell 'IDDRE1' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:234]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'u_IDDRE1_data' to cell 'IDDRE1' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:234]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'u_IDDRE1_data' to cell 'IDDRE1' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:234]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'u_IDDRE1_data' to cell 'IDDRE1' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:234]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'u_IDDRE1_data' to cell 'IDDRE1' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:234]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'u_IDDRE1_data' to cell 'IDDRE1' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:234]
+INFO: [Synth 8-3491] module 'sample_fifo' declared at '/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/synth/sample_fifo.v:53' bound to instance 'cdc_fifo' of component 'sample_fifo' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:253]
+INFO: [Synth 8-6157] synthesizing module 'sample_fifo' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/synth/sample_fifo.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_8_top' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/hdl/axis_infrastructure_v1_1_vl_rfs.v:599]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/hdl/axis_infrastructure_v1_1_vl_rfs.v:599]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2342]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:493]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2342]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_8_top' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'sample_fifo' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/src/sample_fifo/synth/sample_fifo.v:53]
+INFO: [Synth 8-638] synthesizing module 'three_wire_spi_top' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_top.vhd:51]
+INFO: [Synth 8-113] binding component instance 'sdio_iobuf' to cell 'IOBUF' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_top.vhd:98]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+INFO: [Synth 8-113] binding component instance 'u_spi_clk_gate' to cell 'BUFGCE' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_top.vhd:111]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_CB_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'u_spi_data' to cell 'IDDRE1' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_top.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'three_wire_spi' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'three_wire_spi' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'three_wire_spi_cdc' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_cdc.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'cdc_array' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/cdc_array.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'cdc_bit' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/cdc_bit.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'cdc_bit' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/cdc_bit.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'cdc_array' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/cdc_array.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'cdc_array__parameterized0' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/cdc_array.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'cdc_array__parameterized0' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/cdc_array.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'cdc_bit__parameterized0' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/cdc_bit.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'cdc_bit__parameterized0' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/cdc_bit.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'cdc_pulse' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/cdc_pulse.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'cdc_pulse' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/cdc_pulse.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'three_wire_spi_cdc' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_cdc.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'three_wire_spi_regs' [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_regs.vhd:48]
+INFO: [Synth 8-226] default block is never used [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_regs.vhd:239]
+INFO: [Synth 8-226] default block is never used [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_regs.vhd:416]
+INFO: [Synth 8-256] done synthesizing module 'three_wire_spi_regs' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_regs.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'three_wire_spi_top' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi_top.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'adc_adapter_top' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'design_1_adc_adapter_top_0_0' (0#1) [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ip/design_1_adc_adapter_top_0_0/synth/design_1_adc_adapter_top_0_0.vhd:97]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3017]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
+WARNING: [Synth 8-6014] Unused sequential element gen_pf_ic_rc.gae_ic_std.ram_aempty_i_reg was removed.  [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:757]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1390]
+WARNING: [Synth 8-6014] Unused sequential element spi_addr_r_reg was removed.  [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/three_wire_spi.vhd:228]
+WARNING: [Synth 8-3848] Net ad9517_csn in module/entity adc_adapter_top does not have driver. [/home/midimaster21b/prj/tech_challenge/tech_challenge.gen/sources_1/bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd:35]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module three_wire_spi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module three_wire_spi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module three_wire_spi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module three_wire_spi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module three_wire_spi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module three_wire_spi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLKEN in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLKEN in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[23] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[22] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[21] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[20] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[19] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[18] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[17] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[16] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[15] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[14] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[13] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[12] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[11] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[10] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[9] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[8] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[7] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[6] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[5] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[4] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[3] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[2] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[1] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ad9517_csn in module adc_adapter_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3023.594 ; gain = 288.734 ; free physical = 1288 ; free virtual = 9034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3041.406 ; gain = 306.547 ; free physical = 1287 ; free virtual = 9033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3041.406 ; gain = 306.547 ; free physical = 1287 ; free virtual = 9033
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3047.344 ; gain = 0.000 ; free physical = 1285 ; free virtual = 9031
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/midimaster21b/prj/tech_challenge/tech_challenge.runs/design_1_adc_adapter_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/midimaster21b/prj/tech_challenge/tech_challenge.runs/design_1_adc_adapter_top_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_adc_adapter_top_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_adc_adapter_top_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_adc_adapter_top_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_adc_adapter_top_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 8 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3222.094 ; gain = 0.000 ; free physical = 1216 ; free virtual = 8962
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 11 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3222.094 ; gain = 0.000 ; free physical = 1216 ; free virtual = 8962
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3222.094 ; gain = 487.234 ; free physical = 1278 ; free virtual = 9026
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3222.094 ; gain = 487.234 ; free physical = 1278 ; free virtual = 9026
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0/cdc_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/cdc_fifo/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/cdc_fifo/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/cdc_fifo/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/cdc_fifo/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/cdc_fifo/inst/\gen_fifo.xpm_fifo_axis_inst /\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/cdc_fifo/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/cdc_fifo/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/cdc_fifo/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3222.094 ; gain = 487.234 ; free physical = 1279 ; free virtual = 9026
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_spi_state_r_reg' in module 'three_wire_spi'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          spi_idle_state |                          0000001 |                              000
+          spi_init_state |                          1000000 |                              001
+        spi_header_state |                          0100000 |                              010
+          spi_read_state |                          0001000 |                              100
+      spi_read_out_state |                          0000100 |                              101
+         spi_write_state |                          0010000 |                              011
+           spi_end_state |                          0000010 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_spi_state_r_reg' using encoding 'one-hot' in module 'three_wire_spi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3222.094 ; gain = 487.234 ; free physical = 1274 ; free virtual = 9024
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   10 Bit       Adders := 3     
+	   3 Input   10 Bit       Adders := 2     
+	   4 Input    9 Bit       Adders := 5     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 3     
+	   4 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     10 Bit         XORs := 2     
+	   2 Input      9 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 34    
++---Registers : 
+	               32 Bit    Registers := 9     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 47    
+	                9 Bit    Registers := 15    
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 96    
++---RAMs : 
+	              12K Bit	(512 X 24 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   8 Input   32 Bit        Muxes := 7     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 5     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 8     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 33    
+	   4 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 18    
+	   6 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design design_1_adc_adapter_top_0_0 has port debug_leds_p[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adc_adapter_top_0_0 has port debug_leds_p[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adc_adapter_top_0_0 has port debug_leds_p[5] driven by constant 1
+INFO: [Synth 8-3917] design design_1_adc_adapter_top_0_0 has port debug_leds_p[4] driven by constant 1
+INFO: [Synth 8-3917] design design_1_adc_adapter_top_0_0 has port debug_leds_p[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adc_adapter_top_0_0 has port debug_leds_p[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_adc_adapter_top_0_0 has port debug_leds_p[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_adc_adapter_top_0_0 has port debug_leds_p[0] driven by constant 1
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[23] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[22] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[21] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[20] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[19] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[18] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[17] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[16] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[15] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[14] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[13] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[12] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[11] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[10] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[9] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[8] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[7] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[6] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[5] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[4] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[3] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[2] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[1] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ad9517_csn in module design_1_adc_adapter_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_regs_awprot_p[2] in module design_1_adc_adapter_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_regs_awprot_p[1] in module design_1_adc_adapter_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_regs_awprot_p[0] in module design_1_adc_adapter_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_regs_arprot_p[2] in module design_1_adc_adapter_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_regs_arprot_p[1] in module design_1_adc_adapter_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_regs_arprot_p[0] in module design_1_adc_adapter_top_0_0 is either unconnected or has no load
+INFO: [Synth 8-5784] Optimized 7 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 24 bits, new ram width 17 bits.
+RAM ("\U0/cdc_fifo /\inst/gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg ") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 17 for RAM "\U0/cdc_fifo /\inst/gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg "
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3222.094 ; gain = 487.234 ; free physical = 1257 ; free virtual = 9011
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                           | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|\U0/cdc_fifo /\inst/gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 24(WRITE_FIRST)  |   | R | 512 x 24(NO_CHANGE)    | W |   | Port A and B     | 1      | 0      | 1               | 
++------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3538.750 ; gain = 803.891 ; free physical = 709 ; free virtual = 8467
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3539.750 ; gain = 804.891 ; free physical = 709 ; free virtual = 8467
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                           | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|\U0/cdc_fifo /\inst/gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 24(WRITE_FIRST)  |   | R | 512 x 24(NO_CHANGE)    | W |   | Port A and B     | 1      | 0      | 1               | 
++------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U0/cdc_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3568.805 ; gain = 833.945 ; free physical = 706 ; free virtual = 8465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3568.805 ; gain = 833.945 ; free physical = 705 ; free virtual = 8463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3568.805 ; gain = 833.945 ; free physical = 705 ; free virtual = 8463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3568.805 ; gain = 833.945 ; free physical = 705 ; free virtual = 8463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3568.805 ; gain = 833.945 ; free physical = 705 ; free virtual = 8463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3568.805 ; gain = 833.945 ; free physical = 705 ; free virtual = 8463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3568.805 ; gain = 833.945 ; free physical = 705 ; free virtual = 8463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------------+------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                  | RTL Name                                                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------------+------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_adc_adapter_top_0_0 | U0/u_spi/u_cdc/u_addr_cdc/cdc_bit_gen[0].u_cdc_bit/dest_cdc_data_r_reg       | 11     | 13    | NO           | NO                 | NO                | 13     | 0       | 
+|design_1_adc_adapter_top_0_0 | U0/u_spi/u_cdc/u_rw_cdc/dest_cdc_data_r_reg                                  | 11     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|design_1_adc_adapter_top_0_0 | U0/u_spi/u_cdc/u_write_data_cdc/cdc_bit_gen[0].u_cdc_bit/dest_cdc_data_r_reg | 11     | 8     | NO           | NO                 | NO                | 8      | 0       | 
+|design_1_adc_adapter_top_0_0 | U0/u_spi/u_cdc/u_valid_cdc/dest_cdc_data_r_reg                               | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_adc_adapter_top_0_0 | U0/u_spi/u_cdc/u_read_data_cdc/cdc_bit_gen[0].u_cdc_bit/dest_cdc_data_r_reg  | 11     | 8     | NO           | NO                 | NO                | 8      | 0       | 
+|design_1_adc_adapter_top_0_0 | U0/u_spi/u_cdc/u_rst_cdc/dest_cdc_data_r_reg                                 | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-----------------------------+------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFGCE   |     1|
+|2     |CARRY8   |     4|
+|3     |IDDRE1   |     9|
+|4     |IDELAYE3 |     8|
+|5     |LUT1     |    12|
+|6     |LUT2     |    81|
+|7     |LUT3     |    35|
+|8     |LUT4     |    50|
+|9     |LUT5     |   102|
+|10    |LUT6     |   131|
+|11    |MUXF7    |    35|
+|12    |RAMB18E2 |     1|
+|13    |SRL16E   |    32|
+|14    |FDRE     |   704|
+|15    |FDSE     |    15|
+|16    |IBUFDS   |    11|
+|17    |IOBUF    |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3568.805 ; gain = 833.945 ; free physical = 705 ; free virtual = 8463
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3568.805 ; gain = 653.258 ; free physical = 746 ; free virtual = 8504
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3568.812 ; gain = 833.945 ; free physical = 746 ; free virtual = 8504
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3568.812 ; gain = 0.000 ; free physical = 839 ; free virtual = 8597
+INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3638.508 ; gain = 0.000 ; free physical = 761 ; free virtual = 8519
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 11 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instance 
+
+Synth Design complete, checksum: 52f63973
+INFO: [Common 17-83] Releasing license: Synthesis
+147 Infos, 90 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 3638.508 ; gain = 1015.648 ; free physical = 967 ; free virtual = 8725
+INFO: [Common 17-1381] The checkpoint '/home/midimaster21b/prj/tech_challenge/tech_challenge.runs/design_1_adc_adapter_top_0_0_synth_1/design_1_adc_adapter_top_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_adc_adapter_top_0_0, cache-ID = 3f8fa91d47559121
+INFO: [Coretcl 2-1174] Renamed 66 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/midimaster21b/prj/tech_challenge/tech_challenge.runs/design_1_adc_adapter_top_0_0_synth_1/design_1_adc_adapter_top_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_adc_adapter_top_0_0_utilization_synth.rpt -pb design_1_adc_adapter_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  1 21:19:54 2022...

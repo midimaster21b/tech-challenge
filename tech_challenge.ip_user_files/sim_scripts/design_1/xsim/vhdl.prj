@@ -1,0 +1,14 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/2ff8/src/three_wire_spi.vhd" \
+"../../../bd/design_1/ipshared/2ff8/src/cdc_bit.vhd" \
+"../../../bd/design_1/ipshared/2ff8/src/cdc_array.vhd" \
+"../../../bd/design_1/ipshared/2ff8/src/cdc_pulse.vhd" \
+"../../../bd/design_1/ipshared/2ff8/src/three_wire_spi_cdc.vhd" \
+"../../../bd/design_1/ipshared/2ff8/src/three_wire_spi_regs.vhd" \
+"../../../bd/design_1/ipshared/2ff8/src/three_wire_spi_top.vhd" \
+"../../../bd/design_1/ipshared/2ff8/src/adc_adapter_top.vhd" \
+"../../../bd/design_1/ip/design_1_adc_adapter_top_0_0/sim/design_1_adc_adapter_top_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps8_0_99M_0/sim/design_1_rst_ps8_0_99M_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort
